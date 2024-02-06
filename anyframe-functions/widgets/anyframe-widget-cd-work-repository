@@ -1,6 +1,6 @@
-anyframe-source-ghq-repository \
+anyframe-source-work-repository \
   | anyframe-selector-auto \
-  | awk "{ print \"$(ghq root)/\" \$1 }" \
+  | awk "{ print \"$(ghq root)/work/\" \$1 }" \
   | anyframe-action-execute cd --
 
 # Local Variables:
