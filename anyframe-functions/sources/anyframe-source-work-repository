@@ -1,2 +1,0 @@
-
-ghq list | grep -E "^work/" | grep -Po "(?<=^work/).*"

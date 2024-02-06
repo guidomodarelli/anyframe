@@ -1,5 +1,5 @@
-export ANYFRAME_SELECTOR_HEADER="Work"
-export ANYFRAME_FILTER_REPO="work"
+export ANYFRAME_SELECTOR_HEADER="Orphan"
+export ANYFRAME_FILTER_REPO="orphan"
 
 anyframe-source-filter-repository \
   | anyframe-selector-auto \

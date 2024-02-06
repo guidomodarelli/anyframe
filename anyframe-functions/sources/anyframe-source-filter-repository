@@ -1,0 +1,1 @@
+ghq list | grep -E "^${ANYFRAME_FILTER_REPO}/" | grep -Po "(?<=^${ANYFRAME_FILTER_REPO}/).*"

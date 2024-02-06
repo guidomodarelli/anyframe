@@ -1,5 +1,5 @@
-export ANYFRAME_SELECTOR_HEADER="Work"
-export ANYFRAME_FILTER_REPO="work"
+export ANYFRAME_SELECTOR_HEADER="Projects"
+export ANYFRAME_FILTER_REPO="projects"
 
 anyframe-source-filter-repository \
   | anyframe-selector-auto \
