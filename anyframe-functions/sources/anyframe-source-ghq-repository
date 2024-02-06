@@ -1,6 +1,6 @@
 # require ghq (https://github.com/motemen/ghq)
 
-ghq list | grep -v "work/"
+ghq list | grep -E -v "^work/"
 
 # Local Variables:
 # mode: Shell-Script
