@@ -1,0 +1,15 @@
+export ANYFRAME_SELECTOR_HEADER="Notes"
+export ANYFRAME_FILTER_REPO="notes"
+
+anyframe-source-filter-repository \
+  | anyframe-selector-auto \
+  | awk "{ print \"$(ghq root)/${ANYFRAME_FILTER_REPO}/\" \$1 }" \
+  | anyframe-action-execute cd --
+
+export ANYFRAME_SELECTOR_HEADER=""
+export ANYFRAME_FILTER_REPO=""
+
+# Local Variables:
+# mode: Shell-Script
+# End:
+# vim: ft=zsh
