@@ -3,7 +3,7 @@ export ANYFRAME_FILTER_REPO="obsidian"
 
 anyframe-source-filter-repository \
   | anyframe-selector-auto \
-  | awk "{ print \"$(ghq root)/${ANYFRAME_FILTER_REPO}/\" \$1 }" \
+  | awk -F'\n' "{ print \"\\\"\" \"$(ghq root)/${ANYFRAME_FILTER_REPO}/\" \$1 \"\\\"\" }" \
   | anyframe-action-execute cd --
 
 export ANYFRAME_SELECTOR_HEADER=""
