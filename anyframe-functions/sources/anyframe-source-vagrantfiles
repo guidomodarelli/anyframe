@@ -1,0 +1,1 @@
+find ~/ghq -name Vagrantfile | sed "s;$HOME/ghq/;;g; s;/Vagrantfile;;g"

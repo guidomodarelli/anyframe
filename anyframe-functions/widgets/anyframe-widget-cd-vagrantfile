@@ -1,0 +1,4 @@
+anyframe-source-vagrantfiles \
+  | anyframe-selector-auto \
+  | awk -F'\n' "{ print \"\\\"\" \"$(ghq root)/\" \$1 \"\\\"\" }" \
+  | anyframe-action-execute cd --
