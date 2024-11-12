@@ -1,1 +1,1 @@
-find ~/ghq -name Vagrantfile | sed "s;$HOME/ghq/;;g; s;/Vagrantfile;;g"
+find ~/ghq -name Vagrantfile | sed "s;$HOME/ghq/;;g; s;/Vagrantfile;;g" | grep -v "node_modules"
