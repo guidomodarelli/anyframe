@@ -1,11 +1,7 @@
-export ANYFRAME_SELECTOR_HEADER="Global"
-
 anyframe-source-ghq-repository \
-  | anyframe-selector-fzf \
+  | anyframe-selector-fzf --header "[Global]" --prompt "!work/" \
   | awk -F'\n' "{ print \"\\\"\" \"$(ghq root)/\" \$1 \"\\\"\" }" \
   | anyframe-action-execute cd --
-
-export ANYFRAME_SELECTOR_HEADER=""
 
 # Local Variables:
 # mode: Shell-Script
