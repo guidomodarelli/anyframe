@@ -1,1 +1,0 @@
-find ~/ghq/vagrant -name Vagrantfile | sed "s;$(ghq root)/;;g; s;/Vagrantfile;;g"
