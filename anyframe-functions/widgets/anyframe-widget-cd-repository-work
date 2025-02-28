@@ -1,5 +1,5 @@
 anyframe-source-ghq-repository \
-  | fzf --prompt "[Work]" --query "work/ !forks " \
+  | fzf --prompt "[Work] " --query "work/ !forks " \
   | awk -F'\n' "{ print \"\\\"\" \"$(ghq root)/\" \$1 \"\\\"\" }" \
   | anyframe-action-execute cd --
 
