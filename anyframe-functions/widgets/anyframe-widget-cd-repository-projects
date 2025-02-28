@@ -2,7 +2,7 @@ export ANYFRAME_SELECTOR_HEADER="Projects"
 export ANYFRAME_FILTER_REPO="projects"
 
 anyframe-source-filter-repository \
-  | anyframe-selector-auto \
+  | anyframe-selector-fzf \
   | awk -F'\n' "{ print \"\\\"\" \"$(ghq root)/${ANYFRAME_FILTER_REPO}/\" \$1 \"\\\"\" }" \
   | anyframe-action-execute cd --
 

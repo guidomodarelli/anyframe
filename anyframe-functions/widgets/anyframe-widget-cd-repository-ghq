@@ -1,7 +1,7 @@
 export ANYFRAME_SELECTOR_HEADER="Global"
 
 anyframe-source-ghq-repository \
-  | anyframe-selector-auto \
+  | anyframe-selector-fzf \
   | awk -F'\n' "{ print \"\\\"\" \"$(ghq root)/\" \$1 \"\\\"\" }" \
   | anyframe-action-execute cd --
 
