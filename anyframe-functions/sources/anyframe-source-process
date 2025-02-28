@@ -1,4 +1,4 @@
-ps -u $USER -o pid,command --no-headers
+ps -o pid,command --no-headers
 
 # Local Variables:
 # mode: Shell-Script
