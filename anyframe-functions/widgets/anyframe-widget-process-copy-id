@@ -1,4 +1,4 @@
-anyframe-source-process \
+anyframe-source-process -u $USER \
   | anyframe-selector-auto \
   | awk '{print $1}' \
   | xclip -selection clipboard
