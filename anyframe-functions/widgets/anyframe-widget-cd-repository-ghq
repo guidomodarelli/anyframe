@@ -1,5 +1,5 @@
 anyframe-source-ghq-repository \
-  | anyframe-selector-fzf --header "[Global]" --prompt "!work/" \
+  | fzf --header "[Global]" --prompt "!work/" \
   | awk -F'\n' "{ print \"\\\"\" \"$(ghq root)/\" \$1 \"\\\"\" }" \
   | anyframe-action-execute cd --
 
